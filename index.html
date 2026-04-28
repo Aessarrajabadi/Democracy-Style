@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BharatVoter AI | Indian Election Guide</title>
+    <meta name="description" content="Master the Indian election process with BharatVoter AI. Interactive timelines, quizzes, flashcards, and an AI assistant for every citizen.">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <nav>
+                <div class="logo">BharatVoter<span>AI</span></div>
+                <div class="nav-links">
+                    <a href="#timeline">Timeline</a>
+                    <a href="#flashcards">Terms</a>
+                    <a href="#quiz">Quiz</a>
+                    <a href="#assistant">Assistant</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Democracy, <span>Bharat Style.</span></h1>
+                    <p>Understanding the world's largest democratic exercise shouldn't be hard. Explore the Indian election process with interactive tools.</p>
+                    <div class="hero-btns">
+                        <a href="#assistant" class="btn primary">Ask AI Assistant</a>
+                        <a href="#quiz" class="btn secondary">Take a Quiz</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="glass-sphere"></div>
+                </div>
+            </section>
+
+            <section id="timeline" class="section">
+                <div class="section-header">
+                    <h2>Election Roadmap</h2>
+                    <p>The journey of a billion votes, step by step.</p>
+                </div>
+                <div class="timeline-container" id="timeline-list">
+                    <!-- Dynamic Timeline Items -->
+                </div>
+            </section>
+
+            <section id="flashcards" class="section">
+                <div class="section-header">
+                    <h2>Election Dictionary</h2>
+                    <p>Flip cards to understand key terms of Indian democracy.</p>
+                </div>
+                <div class="flashcards-grid" id="flashcards-grid">
+                    <!-- Dynamic Flashcards -->
+                </div>
+            </section>
+
+            <section id="quiz" class="section">
+                <div class="section-header">
+                    <h2>Test Your Knowledge</h2>
+                    <p>Are you ready for the polls? Take our interactive quiz.</p>
+                </div>
+                <div class="quiz-container" id="quiz-container">
+                    <div id="quiz-start">
+                        <button id="start-quiz-btn" class="btn primary">Start Quiz</button>
+                    </div>
+                    <div id="quiz-content" class="hidden">
+                        <div class="quiz-progress-bar"><div id="quiz-progress"></div></div>
+                        <h3 id="quiz-question">Question goes here?</h3>
+                        <div id="quiz-options" class="quiz-options">
+                            <!-- Options dynamically loaded -->
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="hidden">
+                        <h3>Quiz Complete!</h3>
+                        <p id="quiz-score">You scored 0/0</p>
+                        <button id="restart-quiz-btn" class="btn secondary">Try Again</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="assistant" class="section">
+                <div class="assistant-wrapper">
+                    <div class="assistant-info">
+                        <h2>Voter Assistant</h2>
+                        <p>Get instant answers about registration, EVMs, counting, and the Model Code of Conduct.</p>
+                        <div class="assistant-status">
+                            <span class="pulse"></span> Expert Online
+                        </div>
+                        <div class="suggested-queries">
+                            <h4>Suggested Topics:</h4>
+                            <div class="chips-container" id="chips-container">
+                                <button class="chip">How to register?</button>
+                                <button class="chip">What is MCC?</button>
+                                <button class="chip">How EVMs work?</button>
+                                <button class="chip">Role of ECI</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-container">
+                        <div class="chat-messages" id="chat-messages">
+                            <div class="message system">
+                                Namaste! I'm your BharatVoter AI. I can explain the entire Indian election process. What would you like to know?
+                            </div>
+                        </div>
+                        <div class="chat-input-area">
+                            <input type="text" id="chat-input" placeholder="Ask about the election process...">
+                            <button id="send-btn">
+                                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 BharatVoter AI. Educating citizens for a stronger democracy.</p>
+        </footer>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
